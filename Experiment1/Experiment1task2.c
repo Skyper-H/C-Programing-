@@ -1,15 +1,11 @@
 #include <stdio.h>
-
-/*Aim: Write a program to get students PCM marks from the user and find the average. Use conditional
-operator to print if the student is eligible for admission. Eligibility criteria is 50% in
-PCM.*/
-
-int main() {
+int main() 
+{
   double P,C,M,PCM;
   printf("Please enter HSC marks\n");
   printf("Enter Physics marks\t   :");
   scanf("%lf", &P);
-  printf("Enter Chemistry marks      :");
+  printf("Enter Chemistry marks\t :");
   scanf("%lf", &C);
   printf("Enter Maths marks\t   :");
   scanf("%lf", &M);
