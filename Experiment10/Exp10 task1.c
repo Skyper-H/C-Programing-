@@ -1,5 +1,6 @@
 #include<stdio.h>
-int main(){
+int main()
+{
 int num1, num2, sum;
 int *ptr1, *ptr2;
 printf("\t\t**** Addition using Pointers ****\n\n");
