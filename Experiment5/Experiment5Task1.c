@@ -1,13 +1,16 @@
 #include<stdio.h>
-int factorial_iterative(int num){
+int factorial_iterative(int num)
+{
 int prod=1;
 for (int i= 1; i <= num;i++)
 {
     prod*=i;
 }
- return prod;}
+ return prod;
+}
 
- int main(){
+ int main()
+{
      printf("\t\t\t *** Iterative Factorial function *** \n\n");
  int num ;
  printf("Enter Number :");
