@@ -1,11 +1,14 @@
 #include<stdio.h>
-int factorial_recursive(int num){
- if (num<=1){
+int factorial_recursive(int num)
+{
+ if (num<=1)
+ {
     return 1;
  }
  return num*factorial_recursive(num-1);
  }
-int main(){
+int main()
+{
      printf("\t\t\t *** Recursive Factorial function *** \n\n");
  int num ;
  printf("Enter Number :");
