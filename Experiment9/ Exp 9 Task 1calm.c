@@ -1,12 +1,15 @@
 #include <stdio.h>
-struct student_record {
+struct student_record 
+{
     char name[60];
     int roll_no;
     float total_marks;
 }
 ;
-void input_student_data(struct student_record students[], int n) {
-    for (int i = 0; i < n; i++) {
+void input_student_data(struct student_record students[], int n) 
+{
+    for (int i = 0; i < n; i++) 
+    {
         printf("\nEnter details for student %d:\n", i + 1);
 
         printf("Name: ");
@@ -19,16 +22,20 @@ void input_student_data(struct student_record students[], int n) {
         scanf("%f", &students[i].total_marks);
     }
 }
-int find_topper(struct student_record students[], int n) {
+int find_topper(struct student_record students[], int n) 
+{
     int topper_index = 0;
-    for (int i = 1; i < n; i++) {
-        if (students[i].total_marks > students[topper_index].total_marks) {
+    for (int i = 1; i < n; i++) 
+    {
+        if (students[i].total_marks > students[topper_index].total_marks) 
+        {
             topper_index = i;
         }
     }
     return topper_index;
 }
-int main() {
+int main() 
+{
     int n = 5;
     struct student_record students[n];
     printf("\t\t\t^^^ Topper Finder ^^^\n\n");
