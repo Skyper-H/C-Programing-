@@ -1,11 +1,11 @@
 /*Aim: write a program to design menu driven calculator using switch and goto
-  Name: Ansari Mohd Emaad Akhtar
-  UNI: 241A019
-  Roll No : 19
+  Name: ABDUL GHANI IFTIKHAR AHMAD
+  UNI: 241A056
+  Roll No : 147
 */
 #include <stdio.h>
-
-int main(){
+int main()
+{
  float num1,num2,result;
  int mod_result;
  char op;
@@ -19,8 +19,8 @@ int main(){
   printf("Enter operator :");
    scanf(" %c",&op);
 
-
-  switch (op) {
+  switch (op) 
+  {
   case '+':
     result = num1 + num2;
     printf("%.1f + %.1f = %.1f",num1,num2,result);
@@ -33,12 +33,19 @@ int main(){
     result = num1 * num2;
     printf("%.1f * %.1f = %.1f",num1,num2,result);
     break;
-    case '/':{
-    if(num2 != 0){
+    case '/':
+      {
+    if(num2 != 0)
+     {
     result = num1 / num2;
-    printf("%.1f / %.1f = %.1f",num1,num2,result);}
-    else{printf("INFINITY");}
-    break;}
+    printf("%.1f / %.1f = %.1f",num1,num2,result);
+     }
+    else
+    {
+      printf("INFINITY");
+    }
+    break;
+      }
     case '%':
     mod_result = (int)num1%(int)num2;
     printf("%.0f %% %.0f = %d",num1,num2,mod_result);
@@ -48,10 +55,15 @@ int main(){
 }
 printf("\nContinue? (Y/N)");
  scanf(" %c",&op);
- if (op == 'y'|| op == 'Y'){
+ if (op == 'y'|| op == 'Y')
+ {
     goto repeat;
  }
-  else {printf("\nthank you for using my clac");}
+  else 
+ {
+   printf("\nthank you for using my clac");
+ }
 
 
-return 0;}
+return 0;
+}
