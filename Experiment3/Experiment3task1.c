@@ -1,8 +1,3 @@
-/*Aim: write a program to design menu driven calculator using switch and goto
-  Name: ABDUL GHANI IFTIKHAR AHMAD
-  UNI: 241A056
-  Roll No : 147
-*/
 #include <stdio.h>
 int main()
 {
